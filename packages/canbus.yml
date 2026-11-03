@@ -1,9 +1,3 @@
-#SPI for CAN2515 controller board
-spi:
-  clk_pin: GPIO07
-  mosi_pin: GPIO05
-  miso_pin: GPIO06
-
 #Changed canbus definition
 canbus:
   - platform: mcp2515
