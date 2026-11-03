@@ -1,9 +1,16 @@
+#SPI for CAN2515 controller board
+spi:
+  clk_pin: GPIO07
+  mosi_pin: GPIO05
+  miso_pin: GPIO06
+
+#Changed canbus definition
 canbus:
-  - platform: esp32_can
+  - platform: mcp2515
     id: comfoair_canbus
-    tx_pin: ${can_tx_pin}
-    rx_pin: ${can_rx_pin}
+    cs_pin: GPIO15
     bit_rate: 50kbps
+    clock: 8MHZ
     can_id: 0 # mandatory but we do not use it
     on_frame:
       - can_id: 0
