@@ -25,9 +25,9 @@ packages:
 external_components: !include external_components.dashboard.yml
 
 logger:
-  level: INFO
+  level: VERBOSE
   logs:
-    canbus: INFO
+    canbus: VERBOSE
 
 ota:
   - platform: esphome
