@@ -25,9 +25,10 @@ packages:
 external_components: !include external_components.dashboard.yml
 
 logger:
-  level: VERBOSE
-  logs:
-    canbus: VERBOSE
+  baud_rate: 115200
+  level: VERY_VERBOSE
+  logs: VERY_VERBOSE
+    #canbus: VERBOSE
 
 ota:
   - platform: esphome
